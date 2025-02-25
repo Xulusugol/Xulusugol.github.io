@@ -361,6 +361,12 @@ body [data-aos='zoom-in'] {
   font-family: "iconfont";
   content: "\e630";
 }
+.icon-twitter:before {
+  content: "\e62a";
+}
+.icon-bilibili:before {
+  content: "\e603";
+}
 .sidebar-btn-wrapper .sidebar-toc-btn:before {
   font-family: "iconfont";
   content: "\e633";
@@ -2476,6 +2482,12 @@ pre .javascript .function {
 }
 .sidebar-social-icon:hover {
   transform: scale(1.2);
+}
+.icon-twitter {
+  color: #191717;
+}
+.icon-bilibili {
+  color: #00a1d6;
 }
 .sidebar-menu-icon,
 .sidebar-menu-link {
