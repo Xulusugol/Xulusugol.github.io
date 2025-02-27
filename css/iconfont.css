@@ -123,11 +123,20 @@
   font-family: "iconfont";
   content: "\e630";
 }
+.icon-facebook:before {
+  content: "\e60e";
+}
 .icon-twitter:before {
   content: "\e62a";
 }
+.icon-youtube:before {
+  content: "\e62d";
+}
 .icon-bilibili:before {
   content: "\e603";
+}
+.icon-email:before {
+  content: "\e63c";
 }
 .sidebar-btn-wrapper .sidebar-toc-btn:before {
   font-family: "iconfont";
