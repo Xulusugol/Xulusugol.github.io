@@ -13,7 +13,7 @@
 
   
 
-  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};</script>
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.swPath = '/sw.js';window.REIMU_CONFIG.code_block = {"expand":true};</script>
   
   <title>
     归档 |
@@ -65,6 +65,10 @@
 
   
   
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/aplayer@1.10.1/dist/APlayer.min.css">
+
+  
 <meta name="generator" content="Hexo 7.3.0"></head>
 
   <body>
@@ -114,6 +118,15 @@
 <div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
 </div>
 
+
+  <div class="notification-wrapper">
+    <h1>发现新版本</h1>
+    <p>网站好像有新内容，是否更新(ﾟ⊿ﾟ)ﾂ？</p>
+    <div class="notification-btn">
+      <button id="notification-update-btn">更新</button>
+      <button id="notification-close-btn">取消</button>
+    </div>
+  </div>
 
     <div id="container">
       <div id="wrap">
@@ -200,6 +213,8 @@
         <div id="content"  class="sidebar-right" >
           <aside id="sidebar">
   
+    <div id="aplayer" theme="var(--color-link)" data-aos="fade-up"></div>
+  
   
   <div class="sidebar-wrapper ">
     <div class="sidebar-wrap" data-aos="fade-up">
@@ -212,15 +227,15 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">3</div>
+    <div class="sidebar-state-number">4</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
 </div>
 <div class="sidebar-social">
@@ -306,11 +321,19 @@
         <a class="archives-tag-list-link" href="/tags/TravelBlog/">TravelBlog</a>
       </div>
     
+      <div class="archives-tag-list-item" data-aos="zoom-in">
+        <a class="archives-tag-list-link" href="/tags/%E6%96%87%E5%AD%A6/">文学</a>
+      </div>
+    
   </div>
   <div class="category-wrap">
     
       <div class="archives-category-list-item" data-aos="zoom-in">
         <a class="archives-category-list-link" href="/categories/Fumo/">Fumo</a>
+      </div>
+    
+      <div class="archives-category-list-item" data-aos="zoom-in">
+        <a class="archives-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
       </div>
     
   </div>
@@ -327,6 +350,21 @@
         </div>
         <ul>
           
+          <li class="archive-article">
+  <div class="archive-article-date-wrap">
+    <span>
+      <time class="dt-published" datetime="2025-02-27T16:22:25.000Z" itemprop="datePublished">02-28</time>
+    </span>
+  </div>
+  
+    <a class="archive-article-title" href="/2025/02/28/huifeizhiluan/">旧志点注本 乡土志 卷三 回匪之乱</a>
+  
+</li>
+
+          
+    
+    
+    
           <li class="archive-article">
   <div class="archive-article-date-wrap">
     <span>
@@ -402,10 +440,10 @@
     
       <div>
         <span class="icon-brush"></span>
-        240
+        2.3k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:03
+        00:10
       </div>
     
     
@@ -441,15 +479,15 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">3</div>
+    <div class="sidebar-state-number">4</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
 </div>
 <div class="sidebar-social">
@@ -634,19 +672,35 @@
 
 
 
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.getRegistrations().then((registrations) => {
-      for (let registration of registrations) {
-        registration.unregister();
-      }
-    });
-  }
-</script>
+  
+<script src="/js/service_worker.js"></script>
 
 
 
 
+
+
+  
+<script src="https://npm.webcache.cn/aplayer@1.10.1/dist/APlayer.min.js" integrity="sha384-gdGYZwHnfJM54evoZhpO0s6ZF5BQiybkiyW7VXr+h5UfruuRL&#x2F;aORyw+5+HZoU6e" crossorigin="anonymous"></script>
+
+  
+    <script>
+      const ap = new APlayer({
+        theme: "var(--color-link)",
+        container: document.getElementById('aplayer'),
+        audio: [{"name":"广重36号 ～ Neo Super-Express","artist":"zun","url":"/music/hr04_01.mp3","cover":"/images/posts/cover0.jpg","lrc":"","theme":"#ebd0c2"},{"name":"name2","artist":"artist2","url":"url2.mp3","cover":"cover2.jpg","lrc":"lrc2.lrc","theme":"#46718b"}] || [],
+        fixed: false || false,
+        autoplay: false || false,
+        loop: 'all' || 'all',
+        order: 'list' || 'list',
+        preload: 'auto' || 'auto',
+        volume: 0.7 || 0.7,
+        mutex: true || true,
+        listFolded: false || false,
+        lrcType: 3 || 0,
+      });
+    </script>
+  
 
 
 

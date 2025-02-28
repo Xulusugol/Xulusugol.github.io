@@ -166,6 +166,10 @@
   font-family: "iconfont";
   content: "\e62b";
 }
+.icon-qq:before {
+  font-family: "iconfont";
+  content: "\e63e";
+}
 .icon-image:before {
   font-family: "iconfont";
   content: "\e63f";
