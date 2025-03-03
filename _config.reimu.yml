@@ -18,6 +18,9 @@ menu:
   - name: friend
     url: /friend
     icon:
+  - name: 新菜单项
+    url: /new-project
+    icon:
 
 banner: "/images/banner.webp" # which means themes/reimu/source/images/banner.webp
 # You can also write it in the form of the following url
@@ -85,20 +88,20 @@ footer:
 sidebar: right
 
 social:
-  # email: mailto:xxx@gmail.com
+  email: mailto:xxx@gmail.com
   # github: https://github.com/yourname
   # google: https://plus.google.com/yourname
-  # twitter: https://twitter.com/yourname
+  twitter: https://x.com/xulusugol
   # facebook: https://www.facebook.com/yourname
   # instagram: https://www.instagram.com/yourname
   # linkedin: https://www.linkedin.com/in/yourname
   # pinterest: https://www.pinterest.com/yourname
-  # youtube: https://www.youtube.com/channel/yourname
+  youtube: https://www.youtube.com/channel/xulusugol
   # vimeo: https://vimeo.com/yourname
   # flickr: https://www.flickr.com/photos/yourname
   # dribbble: https://dribbble.com/yourname
   # behance: https://www.behance.net/yourname
-  # bilibili: https://space.bilibili.com/yourname
+  bilibili: https://space.bilibili.com/2132709357
   # weibo: https://weibo.com/yourname
   # zhihu: https://www.zhihu.com/people/yourname
   # reddit: https://www.reddit.com/user/yourname
@@ -177,7 +180,7 @@ dark_mode:
 
 # need https://github.com/D-Sketon/hexo-renderer-markdown-it-plus
 markdown:
-  container: false # whether to enable the container style
+  container: true # whether to enable the container style
 
 ########################################
 # Markdown Display
@@ -427,12 +430,12 @@ clipboard:
 
 # show categories card on home page
 home_categories:
-  enable: false
+  enable: true
   content:
-    - categories: # string (single-layer category) or array (multi-layer category)
-      cover: # empty means random cover
-    - categories:
-      cover:
+    - categories: Fumo
+      cover: images/categories2.jpg  
+    - categories: 学习笔记
+      cover: images/categories1.jpg  
 
 # whether to display the notification when the article is outdated
 outdate:
@@ -462,7 +465,7 @@ icp:
 
 # show the copyright below each article
 article_copyright:
-  enable: false
+  enable: true
   content:
     author: true
     link: true
@@ -481,12 +484,12 @@ top:
     mask: true # whether to use the images as a mask
 
 share:
-  # - facebook
-  # - twitter
+  - facebook
+  - twitter
   # - linkedin
   # - reddit
   # - weibo
-  # - qq
+  - qq
   # - weixin
 
 ########################################
@@ -500,7 +503,7 @@ pjax:
 # Experimental
 # https://github.com/GoogleChromeLabs/quicklink
 quicklink:
-  enable: false
+  enable: true
   # The `requestIdleCallback` timeout, in milliseconds.
   timeout: 3000
   # Whether or not the URLs within the options.el container should be treated as high priority.
@@ -516,12 +519,12 @@ pace:
 
 # Experimental
 service_worker:
-  enable: false
+  enable: true
 
 # Experimental
 live2d:
-  enable: false
-  position: left # left or right
+  enable: true
+  position: right # left or right
 
 # Experimental
 live2d_widgets:
@@ -534,18 +537,35 @@ player:
   # if you enable meting, you must enable aplayer first
   aplayer:
     # https://github.com/DIYgod/APlayer
-    enable: false
+    enable: true
     options:
-      audio: []
-      fixed:
-      autoplay:
-      loop:
-      order:
-      preload: 
-      volume:
-      mutex:
-      listFolded:
-      lrcType:
+      audio: [
+          {
+            name: '广重36号 ～ Neo Super-Express',
+            artist: 'zun',
+            url: '/music/hr04_01.mp3',
+            cover: '/images/posts/cover0.jpg',
+            lrc: '',
+            theme: '#ebd0c2'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg',
+            lrc: 'lrc2.lrc',
+            theme: '#46718b'
+        }
+      ]
+      fixed: false
+      autoplay: false
+      loop: 'all'
+      order: 'list'
+      preload: 'auto'
+      volume: 0.7
+      mutex: true
+      listFolded: false
+      lrcType: 3
   meting:
     # https://github.com/metowolf/MetingJS
     # if you want to use meting, please enable aplayer first
