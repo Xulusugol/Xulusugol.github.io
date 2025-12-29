@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let timer;
     let currentQuestion = 0;
     const totalQuestions = 20;
-    const timePerQuestion = 2000; // 2秒(毫秒)
+    const timePerQuestion = 3000; // 2秒(毫秒)
     let gameActive = false;
     
     // 生成新题目
