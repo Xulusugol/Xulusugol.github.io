@@ -5439,11 +5439,11 @@ blockquote.pullquote.right {
   font-size: larger;
 }
 .note.default.flat {
-  background: #fafafa;
+  background: #f7f7f7;
 }
 .note.default.modern {
   border-color: #e1e1e1;
-  background: #f5f5f5;
+  background: #f3f3f3;
   color: #666;
 }
 .note.default.modern a:not(.btn) {
@@ -5469,11 +5469,11 @@ blockquote.pullquote.right {
   color: #777;
 }
 .note.primary.flat {
-  background: #f8f4fb;
+  background: #f5f0fa;
 }
 .note.primary.modern {
   border-color: #e1c2ff;
-  background: #f5dfff;
+  background: #f3daff;
   color: #6f42c1;
 }
 .note.primary.modern a:not(.btn) {
@@ -5499,11 +5499,11 @@ blockquote.pullquote.right {
   color: #6f42c1;
 }
 .note.info.flat {
-  background: #f2f8fb;
+  background: #eef7fa;
 }
 .note.info.modern {
   border-color: #b3e5ef;
-  background: #dff0f8;
+  background: #d9edf7;
   color: #31708f;
 }
 .note.info.modern a:not(.btn) {
@@ -5529,11 +5529,11 @@ blockquote.pullquote.right {
   color: #428bca;
 }
 .note.success.flat {
-  background: #f2f9f3;
+  background: #eff8f0;
 }
 .note.success.modern {
   border-color: #d0e6be;
-  background: #e3f2dd;
+  background: #dff0d8;
   color: #3c763d;
 }
 .note.success.modern a:not(.btn) {
@@ -5559,11 +5559,11 @@ blockquote.pullquote.right {
   color: #5cb85c;
 }
 .note.warning.flat {
-  background: #fefaed;
+  background: #fdf8ea;
 }
 .note.warning.modern {
   border-color: #fae4cd;
-  background: #fdf5e6;
+  background: #fcf4e3;
   color: #8a6d3b;
 }
 .note.warning.modern a:not(.btn) {
@@ -5589,11 +5589,11 @@ blockquote.pullquote.right {
   color: #f0ad4e;
 }
 .note.danger.flat {
-  background: #fdf4f6;
+  background: #fcf1f2;
 }
 .note.danger.modern {
   border-color: #ebcdd2;
-  background: #f4e3e3;
+  background: #f2dfdf;
   color: #a94442;
 }
 .note.danger.modern a:not(.btn) {
@@ -5937,6 +5937,9 @@ blockquote.pullquote.right {
   background: #2c2c2c !important;
 }
 [data-theme='dark'] #post-comment .comment-switch #switch-btn {
+  filter: brightness(0.8);
+}
+[data-theme='dark'] .note {
   filter: brightness(0.8);
 }
 [data-theme='dark'] .hide-button,
